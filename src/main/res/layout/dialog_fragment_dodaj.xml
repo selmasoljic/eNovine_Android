@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.DialogFragmentDodaj" android:padding="16dp">
+
+  <!--  <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Naslov"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16dp"
+        />-->
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_Naslov"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/naslovId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@id/txt1"
+        android:hint="Naslov"
+        />
+    </android.support.design.widget.TextInputLayout>
+   <!-- <TextView
+        android:layout_below="@id/input_layout_Naslov"
+        android:id="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sadržaj"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16dp"
+        />-->
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@id/input_layout_Naslov"
+        android:id="@+id/input_layout_Sadrzaj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+
+        android:id="@+id/sadrzajId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:maxLines="5"
+        android:lines="5"
+        android:gravity="left"
+        android:hint="Sadržaj"
+        />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_below="@id/input_layout_Sadrzaj"
+        android:id="@+id/txt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Odaberite kategoriju"
+        android:textStyle="bold"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16dp"
+        />
+    <ListView
+        android:id="@+id/lvKat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt3"
+        android:divider="@null"
+        ></ListView>
+
+    <!--<Button
+        android:id="@+id/btnSacuvaj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Sacuvaj" />-->
+
+
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.DialogFragmentDodaj" android:padding="16dp">
+
+    <EditText
+        android:id="@+id/naslovId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Unesite naslov..."
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/sadrzajId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Unesite sadrzaj..."
+        android:inputType="textMultiLine"
+        android:layout_below="@id/naslovId"
+        />
+
+    <Button
+        android:id="@+id/btnSacuvaj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Sacuvaj"/>
+
+
+
+</RelativeLayout>
